@@ -6,8 +6,10 @@ import org.testng.annotations.Test;
 
 public class flipkart {
   @Test
-  public void flipkart() {
+  public void flipkart() throws InterruptedException {
 	  WebDriver driver=new ChromeDriver();
 	  driver.get("https://www.flipkart.com/");
+	  Thread.sleep(2000);
+	  driver.close();
   }
 }

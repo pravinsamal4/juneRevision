@@ -7,9 +7,11 @@ import org.testng.annotations.Test;
 
 public class ajio {
   @Test
-  public void ajio() {
+  public void ajio() throws InterruptedException {
 	  WebDriver driver=new ChromeDriver();
 	  driver.get("https://www.ajio.com/");
 //	  Assert.fail();
+	  Thread.sleep(2000);
+	  driver.close();
   }
 }
